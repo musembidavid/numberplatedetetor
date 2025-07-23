@@ -14,7 +14,6 @@ plate_contour = None
 
 for i, c in enumerate(cntours):
     approx = cv2.approxPolyDP(c, 0.02 * cv2.arcLength(c, True), True)
- 
     if len(approx) == 4:
         plate_contour = approx
         break
